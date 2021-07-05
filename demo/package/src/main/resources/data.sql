@@ -1,0 +1,1 @@
+INSERT INTO SAMPLE_ENTITY (id,sample_name) values (1,'test');
