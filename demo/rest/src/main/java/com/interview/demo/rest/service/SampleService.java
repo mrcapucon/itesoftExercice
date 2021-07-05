@@ -5,7 +5,6 @@ import com.interview.demo.repository.SampleRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.annotation.CreatedBy;
 import org.springframework.web.bind.annotation.*;
 
 import javax.ws.rs.Consumes;
@@ -16,7 +15,6 @@ import java.util.List;
 
 
 /**
- * TODO : Correct this class
  *
  * The type Sample service.
  */
@@ -35,9 +33,9 @@ public class SampleService {
 
 
     /**
-     * Gets sample.
+     * Gets all sample.
      *
-     * @return the sample
+     * @return the samples
      */
     @GetMapping
     @Produces(MediaType.APPLICATION_JSON)
@@ -66,7 +64,7 @@ public class SampleService {
      * @param id    the id
      * @param query the query
      */
-    @PutMapping("create/{id}")
+    @PostMapping("create/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
     public void createInvoice(@PathVariable("id") final Long id, @RequestParam("query") final String query){
         this.sampleRepository.save(new SampleEntity().setSampleName(id+query));

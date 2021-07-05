@@ -1,3 +1,5 @@
+com\interview\demo\entity\Frescoes.class
+com\interview\demo\entity\SampleEntity.class
+com\interview\demo\repository\FrescoesRepository.class
 com\interview\demo\common\EntityColumnConstants.class
 com\interview\demo\repository\SampleRepository.class
-com\interview\demo\entity\SampleEntity.class

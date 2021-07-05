@@ -1,3 +1,4 @@
 com\interview\demo\rest\service\HomeService.class
+com\interview\demo\rest\service\FrescoesService.class
 com\interview\demo\rest\service\SampleService.class
 com\interview\demo\rest\service\HelloService.class
