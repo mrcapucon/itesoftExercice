@@ -14,6 +14,17 @@ angular.module('demo')
                 }]
             });
         };
+        service.getFresques = function() {
+                    var url = '/demo/frescoes';
+                    return $http({
+                        url: url,
+                        method: 'GET',
+                        transformResponse: [function (data) {
+                            // Do whatever you want!
+                            return data;
+                        }]
+                    });
+                };
 
     return service;
 }]);

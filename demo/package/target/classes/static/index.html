@@ -27,6 +27,20 @@
         <div class="col-xs-6"><p>Sample as json : {{hello.sampleJson | json }}</p></div>
         <div class="col-xs-6"><button ng-click="getSample()" class="btn btn-sm btn-info">Get sample as JSON</button></div>
     </div>
+    <div class="col-xs-12">
+        <div class="col-xs-6"><p>Fresques as json : {{hello.fresquesJson | json }}</p></div>
+        <div class="col-xs-6"><button ng-click="getFresques()" class="btn btn-sm btn-info">Get fresques as JSON</button></div>
+
+    </div>
+
+    <div class="col-xs-12">
+        <div class="col-xs-6"><p>Fresques as table : </p></div>
+        <div class="col-xs-6"><button ng-click="getFresquesTable()" class="btn btn-sm btn-info">Get fresques as table</button></div>
+
+    </div>
+    <div class="col-xs-12">
+        <table id="table" align = "center" border="1px"></table>
+    </div>
 </div>
 </body>
 
